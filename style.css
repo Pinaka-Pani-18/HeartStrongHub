@@ -59,7 +59,7 @@ button:hover {
 .container {
   max-width: 130rem;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 /* Navbar */
@@ -69,6 +69,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar {
@@ -145,7 +146,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 5rem;
 }
 
@@ -176,7 +177,6 @@ header {
   justify-content: center;
   width: 35%;
   animation: beat 0.25s infinite alternate;
-  /* animation-timing-function: ; */
 }
 
 @keyframes beat {
@@ -211,5 +211,150 @@ header {
   }
   #home .home-content {
     width: 70%;
+  }
+}
+
+/* About Us Section */
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+}
+
+#about h1 {
+  text-align: center;
+  color: var(--maximum-red);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+#about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+#about .about-container .about-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#about .about-container .about-content p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+#about .about-container .about-content .knowMore-btn {
+  align-self: flex-start;
+}
+
+#about .about-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  #about .about-container {
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  #about {
+    margin-top: 5rem;
+  }
+  #about .about-container .about-logo {
+    margin: -10rem 0;
+  }
+  #about .about-container .about-logo img {
+    width: 60rem;
+  }
+  #about .about-container .about-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #about .about-container .about-logo {
+    width: 70%;
+  }
+  #about .about-container .about-content {
+    width: 80%;
+  }
+  #about .about-container .about-logo img {
+    width: 55rem;
+  }
+}
+
+/* Quote */
+
+.quote {
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  min-height: 40vh;
+  background-color: var(--begonia);
+  display: grid;
+  place-items: center;
+}
+
+.quote h1 {
+  font-size: 5rem;
+}
+
+.quote i {
+  font-size: 20rem;
+  margin: 0 2rem;
+  opacity: 0.5;
+}
+
+.quote .quote-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote p {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .quote h1 {
+    font-size: 3rem;
+  }
+
+  .quote i {
+    font-size: 15rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .quote {
+    min-height: 30%;
+  }
+
+  .quote h1 {
+    font-size: 2rem;
+  }
+
+  .quote i {
+    font-size: 10rem;
+  }
+
+  .quote p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .quote h1 {
+    font-size: 1.7rem;
   }
 }
