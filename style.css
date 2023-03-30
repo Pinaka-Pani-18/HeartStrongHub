@@ -175,6 +175,14 @@ header {
   align-items: center;
   justify-content: center;
   width: 35%;
+  animation: beat 0.25s infinite alternate;
+  /* animation-timing-function: ; */
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
 }
 
 #home .home-logo img {
@@ -193,7 +201,7 @@ header {
     margin-top: 10rem;
   }
   #home .home-logo {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 }
 
