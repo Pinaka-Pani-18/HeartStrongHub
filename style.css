@@ -393,7 +393,7 @@ header {
   justify-content: center;
 }
 
-.card {
+#blog .card {
   border-radius: 10px;
   overflow: hidden;
   border: 0.2rem solid var(--begonia);
@@ -403,41 +403,41 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.card:hover {
+#blog .card:hover {
   background-color: var(--begonia);
 }
 
-.card img {
+#blog .card img {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in-out;
 }
 
-.card:hover img {
+#blog .card:hover img {
   transform: scale(1.1);
 }
 
-.card .card-content {
+#blog .card .card-content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 1.5rem;
 }
 
-.card .card-content h2 {
+#blog .card .card-content h2 {
   font-size: 2rem;
 }
 
-.card .card-content p {
+#blog .card .card-content p {
   font-size: 1.5rem;
   text-align: justify;
 }
 
-.card .card-content button {
+#blog .card .card-content button {
   align-self: flex-start;
 }
 
-.card:hover .card-content .readMore-btn {
+#blog .card:hover .card-content .readMore-btn {
   background-color: white;
   color: var(--maximum-red);
 }
@@ -448,11 +448,69 @@ header {
   }
 }
 
+/* tips */
+
+#tips {
+  min-height: 50vh;
+  background-color: var(--begonia);
+  padding: 1rem 0;
+}
+
+#tips h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  margin: 4rem 0;
+  font-weight: 500;
+}
+
+#tips .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  margin: 0 auto;
+}
+
+#tips .card-container .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#tips .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 32rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#tips .card:hover {
+  background-color: white;
+  color: var(--maximum-red);
+}
+
+#tips .cards .card-icon i {
+  width: 12rem;
+}
+
+#tips .cards .card-icon i {
+  font-size: 8rem;
+}
+
+#tips .card-content {
+  margin-left: 2rem;
+}
+
 /* Contact Us */
 
 .contact {
   margin: 1rem 0 5rem 0;
   scroll-margin: 8rem;
+  min-height: 80vh;
 }
 
 .contact h1 {
